@@ -294,7 +294,7 @@
                                 <div class="panel-heading">
                           <div class="pull-left"><h4>CHI TIẾT LOẠI VÉ</h4></div>       
                           <div class="pull-right">
-                           <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#myModal"><i class="fa fa-plus-circle"></i>
+                           <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#Them"><i class="fa fa-plus-circle"></i>
                             Thêm loại vé mới
                             </button>
                           </div>                     
@@ -314,8 +314,7 @@
                                   <td>HCM</td>
                                   <td>Hồ Chí Minh</td>
                                   <td>
-                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
-                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-primary btn-xs" data-toggle="modal"  data-target="#ChinhSua"><i class="fa fa-pencil"></i></button>
                                       <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
                                   </td>
                               </tr>
@@ -323,7 +322,7 @@
                           </table>
 
 
-                             <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+                          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="Them" class="modal fade">
                       <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -348,14 +347,49 @@
                              </form>
                               </div>
                               <div class="modal-footer centered">
-                                  <button data-dismiss="modal" class="btn btn-theme04" type="button">hủy</button>
                                   <button class="btn btn-theme03" type="button">Thêm</button>
+                                  <button data-dismiss="modal" class="btn btn-theme04" type="button">hủy</button>                                
                               </div>
                           </div>
                       </div>
                   </div>
 
 
+                  <!--Bang Chinh Sua -->
+
+                          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="ChinhSua" class="modal fade">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                  <h4 class="modal-title">Thay đổi thông tin</h4>
+                              </div>
+                              <div class="modal-body">  
+                              <form class="form-horizontal tasi-form" method="get">                           
+                                   <div class="form-group">
+                                   <label class="col-sm-2 col-sm-2 control-label">Mã Tỉnh</label>
+                                       <div class="col-sm-10">
+                                          <input type="text" class="form-control">
+                                      </div>
+                                   </div>
+
+                                  <div class="form-group">
+                                   <label class="col-sm-2 col-sm-2 control-label">Tên Tỉnh</label>
+                                       <div class="col-sm-10">
+                                          <input type="text" class="form-control">
+                                      </div>
+                                   </div>
+                             </form>
+                              </div>
+                              <div class="modal-footer centered">
+                                  <button class="btn btn-theme03" type="button">Sửa</button>
+                                  <button data-dismiss="modal" class="btn btn-theme04" type="button">Hủy</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+           <!--Bang Chinh Sua -->
 
                       </div><!-- /content-panel -->
                   </div><!-- /col-md-12 -->
