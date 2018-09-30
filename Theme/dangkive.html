@@ -282,7 +282,7 @@
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper site-min-height">
-          	<h3><i class="fa fa-angle-right"></i> LOẠI VÉ SỐ</h3>
+          	<h3><i class="fa fa-angle-right"></i>ĐĂNG KÍ VÉ</h3>
           	 <!--THAY DOI O DAY-->
 			
 
@@ -292,10 +292,10 @@
                       <div class="content-panel">
                           <table class="table table-striped table-advance table-hover">                
                                 <div class="panel-heading">
-                          <div class="pull-left"><h4>CHI TIẾT LOẠI VÉ</h4></div>       
+                          <div class="pull-left"><h4>CHI TIẾT ĐĂNG KÍ </h4></div>       
                           <div class="pull-right">
                            <button type="button" class="btn btn-success" data-toggle="modal"  data-target="#myModal"><i class="fa fa-plus-circle"></i>
-                            Thêm loại vé mới
+                            Đăng kí số lượng
                             </button>
                           </div>                     
                             </div>
@@ -303,16 +303,26 @@
                             <hr>
                               <thead>
                               <tr>
-                                  <th>#</th>
-                                  <th>Mã Tỉnh</th>
-                                  <th>Tên Tỉnh</th>                                
+                                  <th>Mã đại lí</th>
+                                  <th>Số lượng</th>
+                                  <th>Ngày đăng kí</th>                                
                               </tr>
                               </thead>
                               <tbody>
                               <tr>
-                                  <td>1</td>
-                                  <td>HCM</td>
-                                  <td>Hồ Chí Minh</td>
+                                  <td>0001</td>
+                                  <td>100</td>
+                                  <td>1/5/2010</td>
+                                  <td>
+                                      <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
+                                      <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
+                                      <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>
+                                  </td>
+                              </tr>
+                                 <tr>
+                                  <td>0001</td>
+                                  <td>150</td>
+                                  <td>3/4/2015</td>
                                   <td>
                                       <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>
                                       <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>
@@ -328,19 +338,26 @@
                           <div class="modal-content">
                               <div class="modal-header">
                                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <h4 class="modal-title">Thêm mới loại vé</h4>
+                                  <h4 class="modal-title">Đăng kí số lượng</h4>
                               </div>
                               <div class="modal-body">  
                               <form class="form-horizontal tasi-form" method="get">                           
                                    <div class="form-group">
-                                   <label class="col-sm-2 col-sm-2 control-label">Mã Tỉnh</label>
+                                   <label class="col-sm-2 col-sm-2 control-label">Mã đại lí</label>
                                        <div class="col-sm-10">
                                           <input type="text" class="form-control">
                                       </div>
                                    </div>
 
                                   <div class="form-group">
-                                   <label class="col-sm-2 col-sm-2 control-label">Tên Tỉnh</label>
+                                   <label class="col-sm-2 col-sm-2 control-label">Số lượng</label>
+                                       <div class="col-sm-10">
+                                          <input type="text" class="form-control">
+                                      </div>
+                                   </div>
+
+                                   <div class="form-group">
+                                   <label class="col-sm-2 col-sm-2 control-label">Ngày</label>
                                        <div class="col-sm-10">
                                           <input type="text" class="form-control">
                                       </div>
